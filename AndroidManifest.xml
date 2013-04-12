@@ -57,10 +57,10 @@
 			</intent-filter>
 		</receiver>
 
-		<provider android:name="org.fosdem.db.DBAdapter" android:authorities="gltdb"/>
+		<provider android:name="org.fosdem.db.DBAdapter" android:authorities="glt13db"/>
 		<!-- Provides search suggestions for words and their definitions. -->
 		<provider android:name="org.fosdem.providers.SearchProvider"
-			android:authorities="gltsearch"
+			android:authorities="glt13search"
 			android:syncable="false" />
 	<activity android:name="org.fosdem.schedules.SortPreferences"></activity>
 </application>
