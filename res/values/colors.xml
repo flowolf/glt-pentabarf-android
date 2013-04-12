@@ -22,6 +22,8 @@
 	<drawable name="dark_gray">#333</drawable>
 	<drawable name="dark_green">#007</drawable>
 	<drawable name="glt_dark_orange">#d58125</drawable>
+	<drawable name="glt_header">#333333</drawable>
 	<drawable name="glt_light_orange">#FFE175</drawable>
+	<drawable name="glt_main_bg">#030303</drawable>
 	<drawable name="glt_green">#006c34</drawable>
 </resources>

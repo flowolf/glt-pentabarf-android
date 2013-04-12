@@ -1,6 +1,6 @@
 package org.fosdem.schedules;
 
-import at.linuxtage.glt12.R;
+import at.linuxtage.glt13.R;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
