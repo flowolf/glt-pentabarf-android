@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<string name="app_name">GLT 2013</string>
+	<string name="menu_settings">Einstellungen</string>
+	<string name="menu_about">App Info</string>
+	<string name="menu_testing">Testen</string>
+	<string name="menu_update">Aktualisieren</string>
+	<string name="menu_quit">Beenden</string>
+	<string name="search_label">Suche</string>
+	<string name="settings_description">GLT13 Suche</string>
+	<string name="menu_test_display_event">Display event</string>
+	<string name="menu_prefetch_rooms">Karte laden</string>
+	<string name="synchronize_button">Synchronisieren</string>
+	<string name="synchronize_title">Synchronisieren</string>
+	<string name="synchronize_description">Lädt den aktuellen Terminplan von der linuxtage.at Webseite.\n\nSie benötigen eine Internetverbindung.</string>
+	<string name="db_ver">Datenbank zuletzt aktualisiert:</string>
+	<string name="about_text1">GLT13 Terminplan App</string>
+	<string name="about_text2">erstellt von:\nFlorian \'flowolf\' Klien\n\nErweitert von:\nMichael \'mika\' Prokop\nUlrich \'mru\' Dangel\n\nUrsprünglich von:\nMichaël Uyttersprot, Pieter Iserbyt und Christophe Vandeplas.</string>
+	<string name="about_text3">Quellcode ist unter http://github.com/flowolf/glt-pentabarf-android verfügbar\nIcons (CC BY 3.0) von http://linuxtage.at/pressematerial/</string>
+	<string name="favorites">Favoriten</string>
+	<string name="favorites_event_removed">Termin aus den Favoriten geloscht</string>
+	<string name="favorites_event_added">Termin zu Favoriten hinzugefügt</string>
+	<string name="share">Teilen&#8230;</string>
+	<string name="updater_title">Was wollen Sie aktualisieren?</string>
+	<string-array name="updater_dialog_choices">
+	<item name="updater_dialog_choices_xml">Terminplan aktualisieren</item>
+	</string-array>
+	<string-array name="sort_by_desc"><item>Track</item>
+	<item>Raum</item>
+	</string-array>
+	<string name="all_events">Alle Termine</string>
+	<string name="current_event">Nächste Termine</string>
+	<string name="searchprovider">glt13search</string>
+	<string name="search_and_update_hints">Um zu suchen, verwenden Sie die Android <i>Suche</i> Taste.Stellen Sie sicher dass Sie am neuesten Stand sind, verwenden Sie die <i>Aktualisieren</i> Taste.</string>
+	<string name="event_specials">Besuchen Sie linuxtage.at oder senden \nSie Kommentare an graz13@linuxtage.at</string>
+</resources>
