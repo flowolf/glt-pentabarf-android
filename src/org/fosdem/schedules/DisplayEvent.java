@@ -188,10 +188,12 @@ public class DisplayEvent extends Activity implements OnGestureListener {
 		String eventAbstract = StringUtil.niceify(event
 				.getAbstract_description());
 		if (eventAbstract.length() == 0)
-			eventAbstract = "No abstract available.";
+			// "No abstract available."
+			eventAbstract = getString(R.string.event_descr_no_event_abstr);
 		String eventDescription = StringUtil.niceify(event.getDescription());
 		if (eventDescription.length() == 0)
-			eventDescription = "No lecture description avablable.";
+			// "No lecture description available."
+			eventDescription = getString(R.string.event_descr_no_event_descr);
 
 		setTextViewText(R.id.event_title, event.getTitle());
 		setTextViewText(R.id.event_track, event.getTrack());
@@ -234,16 +236,30 @@ public class DisplayEvent extends Activity implements OnGestureListener {
 	public void share() {
 		final Intent intent = new Intent(android.content.Intent.ACTION_SEND);
 		intent.setType("text/plain");
-		String extra = "I'm attending '" + event.getTitle() + "' (Day "
-				+ (event.getDayindex()) + " at " + event.getStart().getHours()
-				+ ":" + event.getStart().getMinutes() + " @ " + event.getRoom()
-				+ ") #glt13";
+		// "I'm attending '" + event.getTitle() + "' (Day "
+		// + (event.getDayindex()) + " at " + event.getStart().getHours()
+		// + ":" + event.getStart().getMinutes() + " @ " + event.getRoom()
+		// + ")"; -->
+		String extra = getString(R.string.share_will_be_attending_pt1) + event.getTitle() 
+				+ getString(R.string.share_will_be_attending_pt2)
+				+ (event.getDayindex()) 
+				+ getString(R.string.share_will_be_attending_pt3) 
+				+ event.getStart().getHours()
+				+ ":" + event.getStart().getMinutes() 
+				+ getString(R.string.share_will_be_attending_pt4) 
+				+ event.getRoom()
+				+ getString(R.string.share_will_be_attending_pt5);
 		long currentTime = Calendar.getInstance().getTimeInMillis();
 		if (currentTime >= event.getStart().getTime()
 				&& currentTime <= (event.getStart().getTime() + ((event
 						.getDuration() + 10) * 60 * 1000)))
-			extra = "I'm currently attending '" + event.getTitle() + "' ("
-					+ event.getRoom() + ") #glt13";
+			// "I'm currently attending '" + event.getTitle() + "' ("
+			// + event.getRoom() + ") #glt13";
+			extra = getString(R.string.share_am_attending_pt1) 
+			        + event.getTitle() 
+			        + getString(R.string.share_am_attending_pt2)
+					+ event.getRoom() 
+					+ getString(R.string.share_am_attending_pt3);
 		intent.putExtra(Intent.EXTRA_TEXT, extra);
 		startActivity(Intent.createChooser(intent, getString(R.string.share)));
 	}
@@ -284,7 +300,8 @@ public class DisplayEvent extends Activity implements OnGestureListener {
 	}
 	private void prev() {
 		if (pos <= 0 ) {
-			Toast.makeText(this, "No more previous events", Toast.LENGTH_SHORT).show();
+			//"No more previous events"
+			Toast.makeText(this, getString(R.string.event_no_prev), Toast.LENGTH_SHORT).show();
 			return;
 		}
 		pos -= 1;
@@ -298,7 +315,8 @@ public class DisplayEvent extends Activity implements OnGestureListener {
 	private void next() {
 		
 		if (pos >= event_ids.size() -1) {
-			Toast.makeText(this, "No more additional events", Toast.LENGTH_SHORT).show();
+			//"No more additional events"
+			Toast.makeText(this, getString(R.string.event_no_more), Toast.LENGTH_SHORT).show();
 			return;
 		}
 		pos += 1;

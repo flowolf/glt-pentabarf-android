@@ -222,7 +222,7 @@ public class Main extends Activity implements ParserEventListener,
 		} catch (NameNotFoundException e) {
 		}
 		
-		builder.setTitle(getString(R.string.app_name) + " - V. " + version);
+		builder.setTitle(getString(R.string.app_name) + " - v. " + version);
 		builder.setIcon(android.R.drawable.ic_dialog_info);
 		builder.setView(view);
 		builder.setPositiveButton(getString(android.R.string.ok), null);
@@ -340,20 +340,25 @@ public class Main extends Activity implements ParserEventListener,
 			switch (msg.what) {
 			case TAGEVENT:
 				Main.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
-				tvProgress.setText("Fetched " + counter + " events.");
+				// Fetched X events.
+				tvProgress.setText(getString(R.string.fetch_msg1_pt1)  + counter + getString(R.string.fetch_msg1_pt2));
 				break;
 			case STARTFETCHING:
-				tvProgress.setText("Downloading...");
+				// Downloading...
+				tvProgress.setText(R.string.fetch_downloading);
 				break;
 			case DBAdapter.MSG_EVENT_STORED:
-				tvProgress.setText("Stored " + msg.arg1 + " events.");
+				// "Stored " + msg.arg1 + " events."
+				tvProgress.setText(getString(R.string.fetch_msg2_pt1) + msg.arg1 + getString(R.string.fetch_msg2_pt2));
 				break;
 			case DONEFETCHING:
-				tvProgress.setText("Done fetching, loading into DB");
+				// "Done fetching, loading into DB"
+				tvProgress.setText(R.string.fetch_msg3);
 				setDBLastUpdated();
 				break;
 			case DONELOADINGDB:
-				final String doneDb = "Done loading into DB";
+				// "Done loading into DB"
+				final String doneDb = getString(R.string.fetch_msg4);
 				tvProgress.setText(doneDb);
 				toast(doneDb);
 				tvDbVer.setText(getString(R.string.db_ver) + " "
@@ -361,10 +366,12 @@ public class Main extends Activity implements ParserEventListener,
 				createButtons();
 				break;
 			case ROOMIMGSTART:
-				tvProgress.setText("Downloading room images...");
+				//"Downloading room images..."
+				tvProgress.setText(R.string.fetch_msg5);
 				break;
 			case ROOMIMGDONE:
-				final String doneRooms = "Room Images downloaded";
+				//"Room Images downloaded"
+				final String doneRooms = getString(R.string.fetch_msg6);
 				tvProgress.setText(doneRooms);
 				toast(doneRooms);
 				break;

@@ -34,4 +34,43 @@
 	<string name="searchprovider">gltsearch</string>
 	<string name="search_and_update_hints">To search press the Android <i>Search</i> key.\nMake sure to be up2date using the <i>Update</i> option in the menu.</string>
 	<string name="event_specials">Visit linuxtage.at or\nsend feedback to graz13@linuxtage.at</string>
+	<string name="fetch_msg1_pt1">Fetched </string>
+	<!-- counter -->
+	<string name="fetch_msg1_pt2"> events.</string>
+	<string name="fetch_downloading">Downloading&#8230;</string>
+	<string name="fetch_msg2_pt1">Stored </string>
+	<!-- msg.arg1 -->
+	<string name="fetch_msg2_pt2"> events.</string>
+	<string name="fetch_msg3">Done fetching, loading into DB</string>
+	<string name="fetch_msg4">Done loading into DB</string>
+	<string name="fetch_msg5">Downloading room images&#8230;</string>
+	<string name="fetch_msg6">Room Images downloaded</string>
+	<string name="event_descr_no_event_abstr">No abstract available.</string>
+	<string name="event_descr_no_event_descr">No lecture description available.</string>
+	<string name="share_will_be_attending_pt1">I\'m attending \'</string>
+	<!-- Title -->
+	<string name="share_will_be_attending_pt2">\' (Day </string>
+	<!-- One,Two -->
+	<string name="share_will_be_attending_pt3"> at </string>
+	<!-- Time -->
+	<string name="share_will_be_attending_pt4"> \@ </string>
+	<!-- Location -->
+	<string name="share_will_be_attending_pt5">) #glt13</string>
+	<string name="share_am_attending_pt1">I\'m currently attending \'</string>
+	<!-- Title -->
+	<string name="share_am_attending_pt2">\' (</string>
+	<!-- Location -->
+	<string name="share_am_attending_pt3">) #glt13</string>
+	<string name="event_no_prev">No more previous events</string>
+	<string name="event_no_more">"No more additional events"</string>
+	<string name="day">Day</string>
+	<string name="room">Room</string>
+	<string name="search_for">Search for: </string>
+	<string name="events_not_found">Could not find events </string>
+	<string name="event_list_track_pt1">Events on Track </string>
+	<string name="event_list_track_pt2"> on Day </string>
+	<string name="event_list_room_pt1">Events in Room </string>
+	<string name="event_list_room_pt2"> on Day </string>
+	<string name="list_rooms_day">Rooms for Day </string>
+	<string name="list_tracks_day">Tracks for Day </string>
 </resources>

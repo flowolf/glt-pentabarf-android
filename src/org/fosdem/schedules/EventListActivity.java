@@ -70,14 +70,17 @@ public class EventListActivity extends ListActivity {
 			timeSearch = extras.getLong(TIME);
 		}
 		if (trackName != null && dayIndex != 0)
-			setTitle("Day " + dayIndex + " - " + trackName);
+			// Day #num - Trackname
+			setTitle(getString(R.string.day) + " " + dayIndex + " - " + trackName);
 		if (trackName == null && roomName != null) {
-			setTitle("Day " + dayIndex + " - Room " + roomName);
+			setTitle(getString(R.string.day) + " " + dayIndex + " - " 
+		             + getString(R.string.room) + " " + roomName);
 		}
 		if (query != null)
-			setTitle("Search for: " + query);
+			// Search for: 
+			setTitle(getString(R.string.search_for) + " " + query);
 		if (favorites != null && favorites) {
-			setTitle("Favorites");
+			setTitle(getString(R.string.favorites));
 
 			registerReceiver(favoritesChangedReceiver, new IntentFilter(
 					FavoritesBroadcast.ACTION_FAVORITES_UPDATE));
@@ -89,7 +92,8 @@ public class EventListActivity extends ListActivity {
 		if (events.size() <= 0) {
 			this.finish();
 			final Context context = getApplicationContext();
-			final Toast toast = Toast.makeText(context, "Could not find events", Toast.LENGTH_LONG);
+			// "Could not find events"
+			final Toast toast = Toast.makeText(context, getString(R.string.events_not_found), Toast.LENGTH_LONG);
 			toast.show();
 		}
 		for (Event e : events) {
@@ -136,7 +140,9 @@ public class EventListActivity extends ListActivity {
 			db.open();
 
 			if (trackName != null) {
-				setTitle("Events on Track " + trackName + " for Day " + dayIndex);
+				//"Events on Track " + trackName + " for Day " + dayIndex
+				setTitle(getString(R.string.event_list_track_pt1) + " " + trackName 
+						+ " " + getString(R.string.event_list_track_pt2) + " " + dayIndex);
 				return (ArrayList<Event>) db.getEventsByTrackNameAndDayIndex(
 						trackName, dayIndex);
 			} else if (query != null) {
@@ -152,12 +158,14 @@ public class EventListActivity extends ListActivity {
 
 				return db.getFavoriteEvents(startDate);
 			} else if (roomName != null) {
-				setTitle("Events in Room " + roomName + " on Day " + dayIndex);
+				// setTitle("Events in Room " + roomName + " on Day " + dayIndex);
+				setTitle(getString(R.string.event_list_room_pt1) + " " + roomName 
+						+ getString(R.string.event_list_track_pt2) + " " + dayIndex);
 				return (ArrayList<Event>) db.getEventsbyRoomNameAndDayIndex(roomName, dayIndex);
 			} else if (dayIndex != -1){
 				return (ArrayList<Event>) db.getEventsbyDayIndex(dayIndex);
 			} else if (timeSearch != null) {
-				setTitle("Upcoming Events");
+				setTitle(R.string.current_event);
 				Date beginDate = new Date(timeSearch -CURRENT_TIME_SLICE);
 				return (ArrayList<Event>) db.getUpcomingEvents(beginDate);
 			} else {

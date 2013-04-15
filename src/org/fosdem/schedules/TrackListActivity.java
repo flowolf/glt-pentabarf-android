@@ -90,14 +90,16 @@ public class TrackListActivity extends ListActivity  {
 		return true;
 	}
 	protected void handleRoom() {
-		setTitle("Rooms for Day " + dayIndex);
+		// "Rooms for Day " + dayIndex
+		setTitle(getString(R.string.list_rooms_day) + " " + dayIndex);
 		rooms = getRooms();
 		setListAdapter(new RoomAdapter(this, R.layout.track_list, getRooms()));
 	}
 
 	protected void handleTrack()	{
 		tracks = getTracks();
-		setTitle("Tracks for Day " + dayIndex);
+		// "Tracks for Day " + dayIndex
+		setTitle(getString(R.string.list_tracks_day) + " " + dayIndex);
 		setListAdapter(new TrackAdapter(this, R.layout.track_list, getTracks()));
 	}
 	

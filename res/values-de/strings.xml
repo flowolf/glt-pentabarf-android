@@ -29,9 +29,42 @@
 	<string-array name="sort_by_desc"><item>Track</item>
 	<item>Raum</item>
 	</string-array>
-	<string name="all_events">Alle Termine</string>
-	<string name="current_event">Nächste Termine</string>
+	<string name="all_events">Alle Vorträge</string>
+	<string name="current_event">Nächste Vorträge</string>
 	<string name="searchprovider">glt13search</string>
 	<string name="search_and_update_hints">Um zu suchen, verwenden Sie die Android <i>Suche</i> Taste.Stellen Sie sicher dass Sie am neuesten Stand sind, verwenden Sie die <i>Aktualisieren</i> Taste.</string>
 	<string name="event_specials">Besuchen Sie linuxtage.at oder senden \nSie Kommentare an graz13@linuxtage.at</string>
+	<string name="fetch_msg1_pt1"></string>
+	<!-- counter -->
+	<string name="fetch_msg1_pt2">\ Termine geladen.</string>
+	<string name="fetch_downloading">Lade&#8230;</string>
+	<string name="fetch_msg2_pt1"></string>
+	<!-- msg.arg1 -->
+	<string name="fetch_msg2_pt2">\ Termine gespeichert.</string>
+	<string name="fetch_msg3">Fertig geladen, speicher in Datenbank.</string>
+	<string name="fetch_msg4">Datenbank gespeichert.</string>
+	<string name="fetch_msg5">Lade Raumplan&#8230;</string>
+	<string name="fetch_msg6">Raumplan geladen</string>
+	<string name="event_descr_no_event_abstr">Keine Kurzbeschreibung verfügbar.</string>
+	<string name="event_descr_no_event_descr">Keine Beschreibung verfügbar.</string>
+	<string name="share_will_be_attending_pt1">Ich werde \'</string>
+	<string name="share_will_be_attending_pt2">\' anhören (Tag </string>
+	<string name="share_will_be_attending_pt3"> um </string>
+	<string name="share_will_be_attending_pt4"> \@ </string>
+	<string name="share_will_be_attending_pt5">) #glt13</string>
+	<string name="share_am_attending_pt1">Ich höre gerade \'</string>
+	<string name="share_am_attending_pt2">\' (</string>
+	<string name="share_am_attending_pt3">) #glt13</string>
+	<string name="event_no_prev">Keine vorhergehenden Vorträge</string>
+	<string name="event_no_more">Keine nachfolgenden Vorträge</string>
+	<string name="day">Tag</string>
+	<string name="room">Raum</string>
+	<string name="search_for">Suche nach: </string>
+	<string name="events_not_found">Keine Vorträge gefunden </string>
+	<string name="event_list_track_pt1">Vorträge in Track </string>
+	<string name="event_list_track_pt2"> am Tag </string>
+	<string name="event_list_room_pt1">Vorträge in Raum </string>
+	<string name="event_list_room_pt2"> am Tag </string>
+	<string name="list_rooms_day">Räume für Tag </string>
+	<string name="list_tracks_day">Tracks für Tag </string>
 </resources>
