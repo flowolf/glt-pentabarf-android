@@ -73,4 +73,20 @@
 	<string name="event_list_room_pt2"> on Day </string>
 	<string name="list_rooms_day">Rooms for Day </string>
 	<string name="list_tracks_day">Tracks for Day </string>
+	<string name="sett_notification">Notifications</string>
+	<string name="sett_notification_bool">Enable notifications</string>
+	<string name="sett_notification_info">If checked, this will notify you of upcoming events you favorited</string>
+	<string name="sett_vibrate">Vibrate</string>
+	<string name="sett_vibrate_info">Vibrate on notifications</string>
+	<string name="sett_led">Flash led</string>
+	<string name="sett_led_info">Blink led on notification</string>
+	<string name="sett_time">Notification time</string>
+	<string name="sett_time_info">Delay before getting notified of an upcoming favorite event</string>
+	<string name="sett_fav">Favorites</string>
+	<string name="sett_fav_show">Only show upcoming</string>
+	<string name="sett_fav_show_info">If checked, this will ony show the upcoming favorites in the list</string>
+	<string name="sett_sort">Sorting</string>
+	<string name="sett_sort_by">Sort Events by</string>
+	<string name="sett_sort_info">Choose the criteria after the events should be aggregated</string>
+	
 </resources>

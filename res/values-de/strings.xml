@@ -27,12 +27,12 @@
 	<item name="updater_dialog_choices_xml">Terminplan aktualisieren</item>
 	</string-array>
 	<string-array name="sort_by_desc"><item>Track</item>
-	<item>Raum</item>
+	<item>Room</item> <!-- FIXXXME fix settings-->
 	</string-array>
 	<string name="all_events">Alle Vorträge</string>
 	<string name="current_event">Nächste Vorträge</string>
 	<string name="searchprovider">glt13search</string>
-	<string name="search_and_update_hints">Um zu suchen, verwenden Sie die Android <i>Suche</i> Taste.Stellen Sie sicher dass Sie am neuesten Stand sind, verwenden Sie die <i>Aktualisieren</i> Taste.</string>
+	<string name="search_and_update_hints">Um zu suchen, verwenden Sie die Android <i>Suche</i> Taste. Stellen Sie sicher, dass Sie am neuesten Stand sind, verwenden Sie dazu die <i>Aktualisieren</i> Taste im Menü.</string>
 	<string name="event_specials">Besuchen Sie linuxtage.at oder senden \nSie Kommentare an graz13@linuxtage.at</string>
 	<string name="fetch_msg1_pt1"></string>
 	<!-- counter -->
@@ -67,4 +67,20 @@
 	<string name="event_list_room_pt2"> am Tag </string>
 	<string name="list_rooms_day">Räume für Tag </string>
 	<string name="list_tracks_day">Tracks für Tag </string>
+	<string name="sett_notification">Benachrichtigungen</string>
+	<string name="sett_notification_bool">Benachrichtigungen aktivieren</string>
+	<string name="sett_notification_info">Wenn aktiviert, werden Sie zu ihren Favoriten benachrichtigt.</string>
+	<string name="sett_vibrate">Virbrieren</string>
+	<string name="sett_vibrate_info">Vibration bei Benachrichtigung aktivieren</string>
+	<string name="sett_led">Led Blinken</string>
+	<string name="sett_led_info">Led bei Benachrichtigung blinken</string>
+	<string name="sett_time">Benachrichtigungszeit</string>
+	<string name="sett_time_info">Zeitdifferenz zwischen Benachrichtigung und startendem favorisiertem Vortrag</string>
+	<string name="sett_fav">Favoriten</string>
+	<string name="sett_fav_show">Nur Kommende zeigen</string>
+	<string name="sett_fav_show_info">Wenn aktiviert, werden nur kommende Favoriten angezeigt</string>
+	<string name="sett_sort">Sortierung</string>
+	<string name="sett_sort_by">Vorträge sortieren nach</string>
+	<string name="sett_sort_info">Wählen Sie die Kriterien nach denen Sie Vorträge sortieren möchten</string>
+	
 </resources>

@@ -70,6 +70,7 @@ public class TrackListActivity extends ListActivity  {
 		super.onResume();
 		SharedPreferences prefs = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE);
 		String sortby = prefs.getString(Preferences.PREF_SORT, "Track");
+		//switch (SortBy.valueOf(sortby)) {
 		switch (SortBy.valueOf(sortby)) {
 		case Track:
 			handleTrack();

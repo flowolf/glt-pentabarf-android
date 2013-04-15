@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-<PreferenceCategory android:title="Notifications">
+<PreferenceCategory android:title="@string/sett_notification">
 <CheckBoxPreference
-android:title="Enable notifications"
+android:title="@string/sett_notification_bool"
 android:defaultValue="true"
-android:summary="If checked, this will notify you of upcoming events you favorited"
+android:summary="@string/sett_notification_info"
 android:key="notifyPref" />
 <CheckBoxPreference
-android:title="Vibrate"
+android:title="@string/sett_vibrate"
 android:defaultValue="true"
-android:summary="Vibrate on notifications"
+android:summary="@string/sett_vibrate_info"
 android:key="vibratePref" />
 <CheckBoxPreference
-android:title="Flash led"
+android:title="@string/sett_led"
 android:defaultValue="true"
-android:summary="Blink led on notification"
+android:summary="@string/sett_led_info"
 android:key="ledPref" />
 <EditTextPreference
-android:title="Notification time"
+android:title="@string/sett_time"
 android:defaultValue="10"
-android:summary="Delay before getting notified of an upcoming favorite event"
+android:summary="@string/sett_time_info"
 android:key="delayPref"
 android:inputType="number"
 android:digits="0123456789"
 android:maxLength="3"
 />
 </PreferenceCategory>
-<PreferenceCategory android:title="Favorites">
+<PreferenceCategory android:title="@string/sett_fav">
 <CheckBoxPreference
-android:title="Only show upcoming"
+android:title="@string/sett_fav_show"
 android:defaultValue="false"
-android:summary="If checked, this will ony show the upcoming favorites in the list"
+android:summary="@string/sett_fav_show_info"
 android:key="upcomingPref"
  />
 </PreferenceCategory>
-<PreferenceCategory android:title="Sorting">
+<PreferenceCategory android:title="@string/sett_sort">
 <ListPreference
 android:key="sortbyPref"
-android:title="Sort Events by"
-android:summary="Choose the criteria after the events should be aggregated"
+android:title="@string/sett_sort_by"
+android:summary="@string/sett_sort_info"
 android:entries="@array/sort_by_desc"
 android:entryValues="@array/sort_by_desc" />
 </PreferenceCategory>
