@@ -22,7 +22,7 @@ public class ScheduleParseTest extends AndroidTestCase {
 	public void testScheduleParses() {
 		ScheduleParser sp = null;
 		try {
-			sp = new ScheduleParser("http://glt13-programm.linuxtage.at/schedule.de.xml", getContext());
+			sp = new ScheduleParser("http://glt14-programm.linuxtage.at/schedule.de.xml", getContext());
 		} catch (IOException e) {
 			e.printStackTrace();
 			fail("Failed to parse from URL");

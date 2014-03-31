@@ -3,7 +3,7 @@ package org.fosdem.util;
 import java.io.InputStream;
 import java.security.KeyStore;
 
-import at.linuxtage.glt13.R;
+import at.linuxtage.glt14.R;
 
 import org.apache.http.conn.ClientConnectionManager;
 import org.apache.http.conn.scheme.PlainSocketFactory;

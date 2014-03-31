@@ -1,127 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView 
-	xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:id="@+id/eventscrollview"  
-	android:layout_width="fill_parent" 
-	android:layout_height="fill_parent"
-	android:background="@drawable/glt_main_bg">
-	<LinearLayout
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:orientation="vertical">
-	<RelativeLayout 
-		android:id="@+id/RelativeRootLayout" 
-		android:layout_width="fill_parent" 
-		android:layout_height="wrap_content" 
-		android:orientation="vertical" 
-		android:background="@drawable/glt_header"
-		>
-		<org.fosdem.views.FavoriteButton
-			android:id="@+id/favoriteButton"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentRight="true" android:paddingTop="10dip" android:paddingRight="10dip"/>
-		<TextView 
-			android:layout_width="fill_parent" 
-			android:layout_height="wrap_content" 
-			android:id="@+id/event_title" 
-			android:textColor="#EEE"
-			android:textSize="22dip"  
-			android:text="Title"
-			android:paddingRight="25dip"
-			android:paddingLeft="5dip"
-			android:paddingTop="5dip">
-		</TextView>
-	</RelativeLayout>
-	<RelativeLayout
-		android:id="@+id/MetaLayout" 
-		android:layout_width="fill_parent" 
-		android:layout_height="wrap_content" 
-		android:orientation="vertical" 
-		android:background="@drawable/glt_green"
-		>
-		<TextView 
-			android:text="event_track" 
-			android:id="@+id/event_track" 
-			android:layout_width="wrap_content" 
-			android:layout_height="wrap_content" 
-			android:textColor="#EEE"
-			android:layout_marginRight="2dip" 
-			android:layout_alignParentRight="true"
-       		android:layout_below="@id/event_title"
-       		android:paddingRight="5dip"
-       		android:paddingTop="3dip"
-			/>
-		<TextView 
-			android:text="event_room" 
-			android:id="@+id/event_room" 
-			android:layout_width="wrap_content" 
-			android:layout_height="wrap_content" 
-			android:textColor="#EEE"
-			android:layout_marginRight="2dip" 
-			android:layout_marginBottom="5dip"
-			android:layout_alignParentRight="true"
-       		android:layout_below="@id/event_track"
-       		android:paddingRight="5dip"
-       		android:paddingBottom="3dip"
-			/>
-			
-		<TextView 
-			android:text="event_speaker" 
-			android:id="@+id/event_speaker" 
-			android:layout_width="wrap_content" 
-			android:layout_height="wrap_content" 
-			android:textColor="#EEE"
-			android:layout_marginRight="2dip"
-			android:paddingLeft="3dip"
-			android:paddingTop="3dip"
-			android:layout_below="@id/event_title" />
-		
-		<TextView 
-			android:text="event_time" 
-			android:id="@+id/event_time" 
-			android:layout_width="wrap_content" 
-			android:layout_height="wrap_content" 
-			android:textColor="#EEE"
-			android:layout_marginRight="2dip"
-			android:paddingLeft="3dip"
-			android:paddingBottom="3dip"
-			android:layout_below="@id/event_speaker" />	
-		</RelativeLayout>
-		<RelativeLayout 
-			android:id="@+id/BodyLayout" 
-			android:layout_width="fill_parent" 
-			android:layout_height="wrap_content" 
-			android:orientation="vertical" 
-			android:background="@drawable/glt_main_bg"
-			>
-		<TextView 
-			android:text="event_abstract" 
-			android:id="@+id/event_abstract" 
-			android:layout_width="fill_parent" 
-			android:layout_height="wrap_content" 
-			android:textColor="#EEE" 
-			android:padding="4dip"
-			android:layout_margin="10dip"
-			android:background="@drawable/glt_header"
-			/>
-			
-		<TextView 
-			android:text="event_description" 
-			android:id="@+id/event_description" 
-			android:layout_width="fill_parent" 
-			android:layout_height="fill_parent"
-			android:layout_below="@id/event_abstract" 
-			android:textColor="#EEE"
-			android:paddingLeft="10dip"
-			android:paddingRight="10dip"
-			android:paddingBottom="10dip"
-			/>
-		</RelativeLayout>
-		<ImageView
-			android:id="@+id/room_image"
-			android:layout_width="fill_parent" 
-			android:layout_height="wrap_content" 
-			/>
-	</LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventscrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/glt_main_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeRootLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/glt_header"
+            android:orientation="vertical" >
+
+            <org.fosdem.views.FavoriteButton
+                android:id="@+id/favoriteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip" />
+
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:paddingRight="25dip"
+                android:paddingTop="5dip"
+                android:text="Title"
+                android:textColor="#EEE"
+                android:textSize="22dip" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/MetaLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/glt_green"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/event_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/event_title"
+                android:layout_marginRight="2dip"
+                android:paddingRight="5dip"
+                android:paddingTop="3dip"
+                android:text="event_track"
+                android:textColor="#EEE"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/event_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/event_track"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="2dip"
+                android:paddingBottom="3dip"
+                android:paddingRight="5dip"
+                android:text="event_room"
+                android:textColor="#EEE" />
+
+            <TextView
+                android:id="@+id/event_speaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_title"
+                android:layout_marginRight="2dip"
+                android:paddingLeft="3dip"
+                android:paddingTop="3dip"
+                android:text="event_speaker"
+                android:textColor="#EEE"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/event_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_speaker"
+                android:layout_marginRight="2dip"
+                android:paddingBottom="3dip"
+                android:paddingLeft="3dip"
+                android:text="event_time"
+                android:textColor="#EEE" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/BodyLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/glt_main_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/event_abstract"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/glt_header"
+                android:padding="4dip"
+                android:text="event_abstract"
+                android:textColor="#EEE" />
+
+            <TextView
+                android:id="@+id/event_description"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/event_abstract"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="event_description"
+                android:textColor="#EEE" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/room_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
 </ScrollView>

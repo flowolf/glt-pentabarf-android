@@ -5,7 +5,7 @@ package org.fosdem.util;
 
 import java.util.ArrayList;
 
-import at.linuxtage.glt13.R;
+import at.linuxtage.glt14.R;
 
 import org.fosdem.pojo.Event;
 import org.fosdem.schedules.EventListActivity;

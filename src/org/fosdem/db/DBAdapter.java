@@ -36,7 +36,7 @@ public class DBAdapter extends ContentProvider {
 	public static final int MSG_EVENT_STORED = 100;
 
 	// Provider related
-	public static final String PROVIDER_NAME = "glt13db";
+	public static final String PROVIDER_NAME = "glt14db";
 	public static final Uri CONTENT_URI = Uri.parse("content://"
 			+ PROVIDER_NAME + "/events");
 

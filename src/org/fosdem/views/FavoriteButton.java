@@ -72,12 +72,12 @@ public class FavoriteButton extends ImageView implements OnClickListener {
 			// Unmark
 			db.deleteBookmark(event.getId());
 			UIUtil.showToast(this.getContext(), this.getContext().getString(
-					at.linuxtage.glt13.R.string.favorites_event_removed));
+					at.linuxtage.glt14.R.string.favorites_event_removed));
 		} else {
 			// Mark
 			db.addBookmark(event);
 			UIUtil.showToast(this.getContext(), this.getContext().getString(
-					at.linuxtage.glt13.R.string.favorites_event_added));
+					at.linuxtage.glt14.R.string.favorites_event_added));
 		}
 		db.close();
 		isFavorite = !isFavorite;

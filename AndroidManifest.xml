@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	  package="at.linuxtage.glt13"
+	  package="at.linuxtage.glt14"
 	  android:versionName="1.1" android:versionCode="2">
 	  <uses-permission android:name="android.permission.INTERNET" />
 	  <uses-permission android:name="android.permission.VIBRATE" />
@@ -57,14 +57,14 @@
 			</intent-filter>
 		</receiver>
 
-		<provider android:name="org.fosdem.db.DBAdapter" android:authorities="glt13db"/>
+		<provider android:name="org.fosdem.db.DBAdapter" android:authorities="glt14db"/>
 		<!-- Provides search suggestions for words and their definitions. -->
 		<provider android:name="org.fosdem.providers.SearchProvider"
-			android:authorities="glt13search"
+			android:authorities="glt14search"
 			android:syncable="false" />
 	<activity android:name="org.fosdem.schedules.SortPreferences"></activity>
 </application>
 	<instrumentation 
 		android:name="android.test.InstrumentationTestRunner"
-		android:label="FOSDEM JUnit" android:targetPackage="at.linuxtage.glt13"/>
+		android:label="FOSDEM JUnit" android:targetPackage="at.linuxtage.glt"/>
 </manifest> 
