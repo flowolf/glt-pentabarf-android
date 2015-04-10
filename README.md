@@ -1,6 +1,13 @@
 pentabarf-android
 =================
 
+This project is retired! 
+
+It's been replaced by [GLT-Companion](https://github.com/linuxtage/glt-companion).
+
+
+===============================================================================
+
 This repository contains the [Android](http://www.android.com/) application for
 making the schedule of [Linuxdays Graz](http://linuxtage.at/) available offline.
 
